@@ -1,0 +1,22 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "my first app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "mustache": "^2.3.0",
+    "mysql": "^2.15.0"
+  },
+  "author": "Artur Ter-Stepanyan",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^1.6.8"
+  }
+}

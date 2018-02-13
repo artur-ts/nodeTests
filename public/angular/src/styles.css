@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #000;
+}
+
+input {
+  color: #00ff00;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+label {
+  color: #00ff00;
+}
