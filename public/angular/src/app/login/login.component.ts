@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
       if(data) {
         this.login_status = typeof data != "undefined" ? data.logStatus : "";
         this.token_moken = typeof data != "undefined" ? data.token : ""
+        localStorage.setItem('token', this.token_moken)
         this.router.navigate(["/chat"])
         this.loginDisplay = true;
       }
