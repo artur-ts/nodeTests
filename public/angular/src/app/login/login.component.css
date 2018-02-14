@@ -1,0 +1,18 @@
+#loginStatus {
+  width: 200px;
+  padding: 50px;
+  background: none;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.green {
+  border: 1px solid #00ff00;
+  color: #00FF00;
+}
+
+.red {
+  color: #ff211a;
+  border: 1px solid #ff211a;
+
+}

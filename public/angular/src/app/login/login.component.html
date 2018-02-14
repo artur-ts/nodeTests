@@ -1,0 +1,5 @@
+<div><label>username: <input type="text" name="username" id="username" #usname></label></div>
+<div><label>password: <input type="password" name="password" id="password" #uspass></label></div>
+<div><button (click)="checkToken()">Check</button></div>
+<div><button (click)="generateToken(usname.value, uspass.value)">Generate</button></div>
+<div id="loginStatus" *ngIf="loginDisplay"  [ngClass]="{'green': login_status == 'LOG IN SUCCESS' , 'red' : login_status == 'INVALID CREDENTIALS'}">{{ login_status }}</div>
