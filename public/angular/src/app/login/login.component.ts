@@ -23,11 +23,15 @@ export class LoginComponent implements OnInit {
   generateToken(user: string , pass: string) {
     this.http.post('http://127.0.0.1:8000/api/login',{username:user, password:pass}, {headers:  {"Content-Type" : "application/json"}}).subscribe(data => {
       if(data) {
-        this.login_status = typeof data != "undefined" ? data.logStatus : "";
-        this.token_moken = typeof data != "undefined" ? data.token : ""
-        localStorage.setItem('token', this.token_moken)
-        this.router.navigate(["/chat"])
+        this.login_status = typeof data.logStatus != "undefined" ? data.logStatus : "";
+        this.token_moken = typeof data.token != "undefined" ? data.token : ""
+        localStorage.setItem('token', this.token_moken
         this.loginDisplay = true;
+        setTimeout(() => {
+          this.router.navigate(["/chat"])
+        },2000)
+
+
       }
 
     }, error => {
